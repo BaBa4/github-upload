@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Login/Register page</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">ShadowBank</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="login.html">Home</a></li>
+          <li><a href="main_page.html">Main</a></li>
+          <li><a href="transfer_money.html">Transfer</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">Login page - Welcome</div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input formmethod="post" id="email" type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input formmethod="post" id="password" type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <br>
+                            <div class="input-group-btn">
+                                <button class="btn btn-success btn-block" type="submit" formaction="main_page.html">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
